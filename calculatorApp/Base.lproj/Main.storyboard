@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculatorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,182 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqq-2t-XnF">
+                                <rect key="frame" x="20" y="28" width="560" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="28" width="360" height="70"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu8-yh-8qk">
+                                <rect key="frame" x="20" y="160" width="46" height="30"/>
+                                <state key="normal" title="7"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="151" width="62" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g06-x5-zEK">
+                                <rect key="frame" x="86" y="160" width="46" height="30"/>
+                                <state key="normal" title="8"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="132" y="151" width="58" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8h-NR-pGs">
+                                <rect key="frame" x="153" y="160" width="46" height="30"/>
+                                <state key="normal" title="9"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="151" width="59" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLg-ik-Cms">
+                                <rect key="frame" x="219" y="160" width="46" height="30"/>
+                                <state key="normal" title="/"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="265" y="151" width="65" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5l-fw-ayF">
+                                <rect key="frame" x="20" y="160" width="46" height="30"/>
+                                <state key="normal" title="4"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="236" width="62" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7m-Le-Q0I">
+                                <rect key="frame" x="86" y="160" width="46" height="30"/>
+                                <state key="normal" title="5"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="132" y="236" width="58" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJS-nC-7hk">
+                                <rect key="frame" x="153" y="160" width="46" height="30"/>
+                                <state key="normal" title="6"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="236" width="59" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81O-1b-9og">
+                                <rect key="frame" x="219" y="160" width="46" height="30"/>
+                                <state key="normal" title="X"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="265" y="236" width="65" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNc-cw-Yi5">
+                                <rect key="frame" x="20" y="160" width="46" height="30"/>
+                                <state key="normal" title="1"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="326" width="62" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEE-DA-jYk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8M-Bt-FM2">
+                                <rect key="frame" x="86" y="160" width="46" height="30"/>
+                                <state key="normal" title="2"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="132" y="326" width="58" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lGc-b6-5Tf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvF-Bs-Avn">
+                                <rect key="frame" x="153" y="160" width="46" height="30"/>
+                                <state key="normal" title="3"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="326" width="59" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoD-qi-vXx">
+                                <rect key="frame" x="20" y="160" width="46" height="30"/>
+                                <state key="normal" title="AC"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="423" width="62" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zk-tx-bZ9">
+                                <rect key="frame" x="86" y="160" width="46" height="30"/>
+                                <state key="normal" title="0"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="132" y="423" width="58" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnb-Yh-fzZ">
+                                <rect key="frame" x="153" y="160" width="46" height="30"/>
+                                <state key="normal" title="="/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="423" width="59" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAl-IR-l8j">
+                                <rect key="frame" x="219" y="160" width="46" height="30"/>
+                                <state key="normal" title="+"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="265" y="423" width="65" height="47"/>
+                                </variation>
+                                <connections>
+                                    <action selector="calculationPressedPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s7l-LL-dLZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STg-b1-0qd">
+                                <rect key="frame" x="219" y="160" width="46" height="30"/>
+                                <state key="normal" title="-"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="265" y="326" width="65" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="calculationPressedMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xCS-EZ-QO7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="p5l-fw-ayF"/>
+                                <exclude reference="x7m-Le-Q0I"/>
+                                <exclude reference="iJS-nC-7hk"/>
+                                <exclude reference="81O-1b-9og"/>
+                                <exclude reference="JNc-cw-Yi5"/>
+                                <exclude reference="x8M-Bt-FM2"/>
+                                <exclude reference="cvF-Bs-Avn"/>
+                                <exclude reference="HoD-qi-vXx"/>
+                                <exclude reference="0Zk-tx-bZ9"/>
+                                <exclude reference="pnb-Yh-fzZ"/>
+                                <exclude reference="bAl-IR-l8j"/>
+                                <exclude reference="STg-b1-0qd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="p5l-fw-ayF"/>
+                                <include reference="x7m-Le-Q0I"/>
+                                <include reference="iJS-nC-7hk"/>
+                                <include reference="81O-1b-9og"/>
+                                <include reference="JNc-cw-Yi5"/>
+                                <include reference="x8M-Bt-FM2"/>
+                                <include reference="cvF-Bs-Avn"/>
+                                <include reference="HoD-qi-vXx"/>
+                                <include reference="0Zk-tx-bZ9"/>
+                                <include reference="pnb-Yh-fzZ"/>
+                                <include reference="bAl-IR-l8j"/>
+                                <include reference="STg-b1-0qd"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="calculatorDisplay" destination="Yqq-2t-XnF" id="Qjh-ix-Fqn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="288.75"/>
         </scene>
     </scenes>
 </document>
