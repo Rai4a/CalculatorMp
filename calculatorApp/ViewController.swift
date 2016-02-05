@@ -13,24 +13,7 @@ class ViewController: UIViewController {
     @IBAction func numberPressed1(sender: UIButton) {
         
     }
-    @IBAction func numberPressed2(sender: UIButton) {
-    }
-    @IBAction func numberPressed3(sender: UIButton) {
-    }
-    @IBAction func numberPressed4(sender: UIButton) {
-    }
-    @IBAction func numberPressed5(sender: UIButton) {
-    }
-    @IBAction func numberPressed6(sender: UIButton) {
-    }
-    @IBAction func numberPressed7(sender: UIButton) {
-    }
-    @IBAction func numberPressed8(sender: UIButton) {
-    }
-    @IBAction func numberPressed9(sender: UIButton) {
-    }
-    @IBAction func numberPressed0(sender: UIButton) {
-    }
+    
     @IBAction func calculationPressedMinus(sender: UIButton) {
     }
     @IBAction func calculationPressedMultiply(sender: UIButton) {
